@@ -1,0 +1,208 @@
+/* ================================================
+   GERADOR DE SENHAS — Dev Respawn Cyberpunk Theme
+   ================================================ */
+
+/* --- ROOT / FUNDO --- */
+.root {
+    -fx-background-color: #0D0D0D;
+    -fx-font-family: "Consolas", "Courier New", monospace;
+}
+
+/* --- VBOX PRINCIPAL --- */
+VBox {
+    -fx-background-color: #0D0D0D;
+}
+
+/* ================================================
+   TÍTULO
+   ================================================ */
+.titulo {
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 16px;
+    -fx-text-fill: #00FF9C;
+    -fx-effect: dropshadow(gaussian, #00FF9C, 6, 0.3, 0, 0);
+}
+
+/* ================================================
+   CHECKBOXES
+   ================================================ */
+.check-box {
+    -fx-text-fill: #C0C0FF;
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 8px;
+    -fx-cursor: hand;
+    -fx-padding: 0 14 0 14;
+}
+
+.check-box .box {
+    -fx-background-color: #1A1A2E;
+    -fx-border-color: #00FF9C;
+    -fx-border-width: 2px;
+    -fx-border-radius: 2px;
+    -fx-background-radius: 2px;
+    -fx-min-width: 16px;
+    -fx-min-height: 16px;
+    -fx-effect: dropshadow(gaussian, #00FF9C, 4, 0.4, 0, 0);
+}
+
+.check-box:selected .box {
+    -fx-background-color: #00FF9C;
+    -fx-border-color: #00FF9C;
+    -fx-effect: dropshadow(gaussian, #00FF9C, 10, 0.8, 0, 0);
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #0D0D0D;
+    -fx-shape: "M 0,4 L 2,6 L 6,0";
+}
+
+.check-box:hover .box {
+    -fx-border-color: #FFFFFF;
+    -fx-effect: dropshadow(gaussian, #00FF9C, 8, 0.6, 0, 0);
+}
+
+/* ================================================
+   SEPARADORES
+   ================================================ */
+.separator .line {
+    -fx-border-color: #1A1A2E;
+    -fx-border-width: 1px;
+}
+
+/* ================================================
+   COMBOBOX
+   ================================================ */
+.combo-box {
+    -fx-background-color: #1A1A2E;
+    -fx-border-color: #00FF9C;
+    -fx-border-width: 2px;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, #00FF9C, 6, 0.4, 0, 0);
+}
+
+.combo-box .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #00FF9C;
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 9px;
+    -fx-padding: 6 10 6 10;
+}
+
+.combo-box-popup .list-view {
+    -fx-background-color: #1A1A2E;
+    -fx-border-color: #00FF9C;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, #00FF9C, 10, 0.5, 0, 0);
+}
+
+.combo-box-popup .list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #C0C0FF;
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 9px;
+    -fx-padding: 8 12 8 12;
+}
+
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-background-color: #00FF9C;
+    -fx-text-fill: #0D0D0D;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.combo-box .arrow {
+    -fx-background-color: #00FF9C;
+}
+
+/* Prompt text (placeholder) */
+.combo-box .text-input,
+.combo-box .label {
+    -fx-text-fill: #555580;
+    -fx-font-size: 9px;
+    -fx-font-family: "Press Start 2P";
+}
+
+/* ================================================
+   BOTÕES
+   ================================================ */
+.botao-gerar {
+    -fx-background-color: #00FF9C;
+    -fx-text-fill: #0D0D0D;
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 10px;
+    -fx-padding: 10 32 10 32;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, #00FF9C, 14, 0.7, 0, 0);
+}
+
+.botao-gerar:hover {
+    -fx-background-color: #0D0D0D;
+    -fx-text-fill: #00FF9C;
+    -fx-border-color: #00FF9C;
+    -fx-border-width: 2px;
+    -fx-effect: dropshadow(gaussian, #00FF9C, 22, 0.9, 0, 0);
+}
+
+.botao-gerar:pressed {
+    -fx-background-color: #00CC7A;
+    -fx-effect: dropshadow(gaussian, #00FF9C, 6, 0.4, 0, 0);
+}
+
+.botao-copiar {
+    -fx-background-color: transparent;
+    -fx-text-fill: #C0C0FF;
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 8px;
+    -fx-padding: 8 24 8 24;
+    -fx-border-color: #C0C0FF;
+    -fx-border-width: 2px;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, #C0C0FF, 4, 0.3, 0, 0);
+}
+
+.botao-copiar:hover {
+    -fx-background-color: #C0C0FF;
+    -fx-text-fill: #0D0D0D;
+    -fx-effect: dropshadow(gaussian, #C0C0FF, 14, 0.7, 0, 0);
+}
+
+.botao-copiar:pressed {
+    -fx-background-color: #9090CC;
+    -fx-effect: none;
+}
+
+/* ================================================
+   LABEL — SENHA GERADA (destaque principal)
+   ================================================ */
+.senha-label {
+    -fx-font-family: "Consolas", "Courier New", monospace;
+    -fx-font-size: 18px;
+    -fx-text-fill: #00FF9C;
+    -fx-background-color: #1A1A2E;
+    -fx-padding: 12 24 12 24;
+    -fx-border-color: #00FF9C;
+    -fx-border-width: 2px;
+    -fx-border-radius: 4px;
+    -fx-background-radius: 4px;
+    -fx-effect: dropshadow(gaussian, #00FF9C, 16, 0.6, 0, 0);
+    -fx-min-width: 300px;
+    -fx-alignment: CENTER;
+}
+
+/* ================================================
+   LABEL — FEEDBACK DE CÓPIA
+   ================================================ */
+.copia-label {
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 8px;
+    -fx-text-fill: #FF003C;
+    -fx-effect: dropshadow(gaussian, #FF003C, 6, 0.5, 0, 0);
+}
