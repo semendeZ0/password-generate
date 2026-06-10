@@ -5,6 +5,7 @@
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
@@ -37,6 +38,8 @@
 
       <!-- SENHA GERADA -->
       <Label fx:id="senhaGeradaLabel" styleClass="senha-label" />
+      <Label fx:id="segurancaLabel" styleClass="seguranca-label" text="segurança da senha" />
+      <ProgressBar fx:id="segurancaProgressBar" prefHeight="58.0" prefWidth="260.0" progress="0.0" />
 
       <!-- BOTÃO COPIAR -->
       <Button mnemonicParsing="false" onAction="#copiarSenha" styleClass="botao-copiar" text="COPIAR" />

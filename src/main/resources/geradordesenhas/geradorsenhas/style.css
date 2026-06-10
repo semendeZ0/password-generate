@@ -198,6 +198,70 @@ VBox {
 }
 
 /* ================================================
+   LABEL — SEGURANÇA DA SENHA
+   ================================================ */
+.seguranca-label {
+    -fx-font-family: "Press Start 2P";
+    -fx-font-size: 8px;
+    -fx-text-fill: #555580;
+}
+
+/* ================================================
+   PROGRESSBAR — SEGURANÇA
+   ================================================ */
+.progress-bar {
+    -fx-pref-height: 20px;
+    -fx-min-height: 20px;
+    -fx-border-color: #2A2A4E;
+    -fx-border-width: 2px;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-accent: #00FF9C;
+}
+
+.progress-bar .track {
+    -fx-background-color: #1A1A2E;
+    -fx-background-insets: 0;
+    -fx-background-radius: 3px;
+    -fx-padding: 0;
+}
+
+.progress-bar .bar {
+    -fx-background-color: #00FF9C;
+    -fx-background-insets: 0;
+    -fx-background-radius: 2px;
+    -fx-effect: dropshadow(gaussian, #00FF9C, 10, 0.6, 0, 0);
+    -fx-padding: 10px;
+}
+
+/* Fraca — vermelho */
+.progress-bar.fraca {
+    -fx-accent: #FF003C;
+}
+.progress-bar.fraca .bar {
+    -fx-background-color: #FF003C;
+    -fx-effect: dropshadow(gaussian, #FF003C, 10, 0.6, 0, 0);
+}
+
+/* Média — amarelo */
+.progress-bar.media {
+    -fx-accent: #FFD600;
+}
+.progress-bar.media .bar {
+    -fx-background-color: #FFD600;
+    -fx-effect: dropshadow(gaussian, #FFD600, 10, 0.6, 0, 0);
+}
+
+/* Forte — verde */
+.progress-bar.forte {
+    -fx-accent: #00FF9C;
+}
+.progress-bar.forte .bar {
+    -fx-background-color: #00FF9C;
+    -fx-effect: dropshadow(gaussian, #00FF9C, 10, 0.6, 0, 0);
+}
+
+/* ================================================
    LABEL — FEEDBACK DE CÓPIA
    ================================================ */
 .copia-label {
@@ -205,4 +269,8 @@ VBox {
     -fx-font-size: 8px;
     -fx-text-fill: #FF003C;
     -fx-effect: dropshadow(gaussian, #FF003C, 6, 0.5, 0, 0);
+}
+
+.seguranca-label{
+    -fx-font-family: 'Press Start 2P';
 }
